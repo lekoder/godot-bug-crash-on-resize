@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://default_env.tres" type="Environment" id=2]
 
 [node name="Rect" type="TextureRect" index="0"]
+modulate = Color( 3, 3, 3, 1 )
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -15,4 +17,9 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 1 )
 stretch_mode = 2
+_sections_unfolded = [ "Visibility" ]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
+environment = ExtResource( 2 )
+_sections_unfolded = [ "environment" ]
 

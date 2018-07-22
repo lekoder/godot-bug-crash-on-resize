@@ -22,7 +22,7 @@ texture_size = 2
 
 [resource]
 
-background_mode = 2
+background_mode = 4
 background_sky = SubResource( 1 )
 background_sky_custom_fov = 0.0
 background_color = Color( 0, 0, 0, 1 )
@@ -80,23 +80,24 @@ dof_blur_near_distance = 2.0
 dof_blur_near_transition = 1.0
 dof_blur_near_amount = 0.1
 dof_blur_near_quality = 1
-glow_enabled = false
-glow_levels/1 = false
-glow_levels/2 = false
+glow_enabled = true
+glow_levels/1 = true
+glow_levels/2 = true
 glow_levels/3 = true
-glow_levels/4 = false
+glow_levels/4 = true
 glow_levels/5 = true
 glow_levels/6 = false
-glow_levels/7 = false
-glow_intensity = 0.8
-glow_strength = 1.0
-glow_bloom = 0.0
+glow_levels/7 = true
+glow_intensity = 3.01
+glow_strength = 1.34
+glow_bloom = 0.67
 glow_blend_mode = 2
-glow_hdr_threshold = 1.0
+glow_hdr_threshold = 0.53
 glow_hdr_scale = 2.0
 glow_bicubic_upscale = false
 adjustment_enabled = false
 adjustment_brightness = 1.0
 adjustment_contrast = 1.0
 adjustment_saturation = 1.0
+_sections_unfolded = [ "Adjustments", "Ambient Light", "Background", "Glow" ]
 
